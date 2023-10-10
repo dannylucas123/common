@@ -14,7 +14,7 @@ declare global {
   }
 }
 
-const currentUserMw = (req: Request, res: Response, next: NextFunction) => {
+export const currentUserMw = (req: Request, res: Response, next: NextFunction) => {
   if (!req.headers.cookie) {
     return next();
   }
@@ -35,5 +35,3 @@ const currentUserMw = (req: Request, res: Response, next: NextFunction) => {
     next();
   });
 };
-
-export default currentUserMw;
