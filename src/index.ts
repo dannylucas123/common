@@ -10,3 +10,5 @@ export * from './errors/validation-error';
 export * from './middlewares/current-user';
 export * from './middlewares/validate-request';
 export * from './middlewares/verify-auth';
+
+export * from './helpers/password';
